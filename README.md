@@ -18,3 +18,30 @@ Access:
 ```bash
   npm start   
 ```
+
+`Example of use`
+```javascript
+  const Drive = require("./google_drive.js")
+
+  const CREDENTIALS = './CredentialsServiceAccount.json'
+  const SCOPES = ['https://www.googleapis.com/auth/drive.file']
+
+  const services = new Drive(CREDENTIALS, SCOPES)
+
+//upload of file
+  await services.createFileUpload(filename, file, mimeType, folderId)
+//delete file by id
+  await services.deleteFile(fileId)
+//list files
+  await services.listFiles()
+//create folder
+  await services.createFolder(folderName)
+```
+
+```
+Note: You need to allow the user created in Service_Acconunt to be able to read and write within a certain folder in Drive. 
+This repository does not allow you to access the files contained in the root of the Drive, only within a folder with valid permissions.
+```
+<br/>
+<br/>
+<p align=center><b>Clebson Santos, 2022</b></p>
