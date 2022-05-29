@@ -15,12 +15,6 @@ Access:
   - keys, add new keys
   - export to json
 
-
-`Enter your credentials and edit the main.js file. then run the command below`
-```bash
-  npm start   
-```
-
 `Example of use`
 ```javascript
   // if you prefer you can use `require`
