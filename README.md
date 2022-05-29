@@ -4,8 +4,9 @@
 
 ### **Application designed to manage files and folders as a google drive service**
 
+`Install`
 ```bash
-  npm install
+  npm install sync-drive
 ```
 `Generate json file to access google services`
 Access: 
