@@ -1,16 +1,25 @@
 {
   "name": "sync-drive",
   "version": "1.0.0",
-  "description": "",
+  "description": "library intended to sync local files with a specific folder on google drive",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "node main.js"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": ["google", "drive", "sync", "account", "google-drive", "upload", "files"],
+  "author": "clebsonsantos",
   "license": "ISC",
   "dependencies": {
     "googleapis": "^100.0.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clebsonsantos/sync-drive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clebsonsantos/sync-drive/issues"
+  },
+  "homepage": "https://github.com/clebsonsantos/sync-drive#readme"
 }
