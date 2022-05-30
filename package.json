@@ -1,6 +1,6 @@
 {
   "name": "sync-drive",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "library intended to sync local files with a specific folder on google drive",
   "main": "index.js",
   "type": "module",
