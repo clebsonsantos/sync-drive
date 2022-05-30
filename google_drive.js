@@ -2,12 +2,12 @@ import { google }  from 'googleapis'
 
 class GoogleDriveService {
 
-  constructor(CREDENTIALS, SCOPES,  FOLDER){
-    this.folderId = FOLDER
+  constructor(credentials, folderId){
+    this.folderId = folderId
 
     this.OAuth2client = new google.auth.GoogleAuth({
-      keyFile: CREDENTIALS,
-      scopes: SCOPES
+      keyFile: credentials,
+      scopes: ['https://www.googleapis.com/auth/drive.file']
     })
     
     this.drive = google.drive({ 

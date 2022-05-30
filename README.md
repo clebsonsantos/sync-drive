@@ -22,17 +22,15 @@ Access:
   import * as path from 'path'
   import GoogleDriveService from 'sync-drive';
 
-  const CREDENTIALS = './CredentialsServiceAccount.json';
-
-  const SCOPES = ['https://www.googleapis.com/auth/drive.file'];
-
-  const file = fs.createReadStream(path.resolve('./files/wall-paper.png'))
-  const FOLDER = 'id_of_your_folder'
-  const mimeType = 'image/png'
+  const credentials = './CredentialsServiceAccount.json';
+  const folderId = 'your_folder_id'
 
   async function run(){
-    const upload = new GoogleDriveService(CREDENTIALS, SCOPES, FOLDER)
+    const upload = new GoogleDriveService(credentials, folderId)
     
+    const file = fs.createReadStream(path.resolve('./files/wall-paper.png'))
+    const mimeType = 'image/png'
+
     const response = await upload.createFileUpload("spaces-wall-paper", file, mimeType)
     console.log(response)
 
